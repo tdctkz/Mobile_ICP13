@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity implements TextToSpeech.OnIn
         }
         //Once the user has described their symptoms, they may ask for medicine recommendations. IT will give a default statement
         else if (input.contains("medicines") || input.contains("medication")) {
-            mTts.speak("I think you might have a cold or flu. You should take an acetaminophen.", TextToSpeech.QUEUE_FLUSH, null);
+            mTts.speak("I think you have a fever. Please take this medicine.", TextToSpeech.QUEUE_FLUSH, null);
         }
         else if (input.contains("thanks") || input.contains("thank you")) {
             mTts.speak("Thank you. Take care.", TextToSpeech.QUEUE_FLUSH, null);
